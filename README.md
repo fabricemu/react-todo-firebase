@@ -1,2 +1,23 @@
-# react-todo-firebase
-This is a simple todo app built with React, Vite, and Firebase. It allows users to add, update, and delete todo items, with data stored in Firebase Firestore. Authentication is implemented using Firebase Authentication, allowing users to sign in and manage their todo lists securely.
+# React Todo App with Firebase
+
+This is a simple todo app built with React, Vite, and Firebase. It provides basic functionality to manage todo items, with data stored in Firebase Firestore. Users can sign in to manage their todo lists securely.
+
+## Features
+
+- Add new todo items
+- Update existing todo items
+- Delete todo items
+- User authentication with Firebase Authentication
+
+## Technologies Used
+
+- React
+- Vite
+- Firebase (Firestore, Authentication)
+
+## Installation
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/fabricemu/todo-app.git
