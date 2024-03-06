@@ -20,4 +20,4 @@ This is a simple todo app built with React, Vite, and Firebase. It provides basi
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/fabricemu/todo-app.git
+   https://github.com/fabricemu/react-todo-firebase.git
