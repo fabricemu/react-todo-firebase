@@ -1,23 +1,8 @@
-# React Todo App with Firebase
+# React + Vite
 
-This is a simple todo app built with React, Vite, and Firebase. It provides basic functionality to manage todo items, with data stored in Firebase Firestore. Users can sign in to manage their todo lists securely.
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-## Features
+Currently, two official plugins are available:
 
-- Add new todo items
-- Update existing todo items
-- Delete todo items
-- User authentication with Firebase Authentication
-
-## Technologies Used
-
-- React
-- Vite
-- Firebase (Firestore, Authentication)
-
-## Installation
-
-1. Clone the repository:
-
-   ```bash
-   https://github.com/fabricemu/react-todo-firebase.git
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
