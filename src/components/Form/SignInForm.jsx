@@ -1,18 +1,24 @@
 // src/components/SignInForm.jsx
 import React, {useState} from 'react';
-import app from "../FireBaseConf/FireBaseConfig.jsx";
-import {Link} from "react-router-dom";
+import all from "../FireBaseConf/FireBaseConfig.jsx";
+import { signInWithEmailAndPassword } from 'firebase/auth';
+import {Link, useNavigate} from "react-router-dom";
 
 const SignInForm = () => {
+    const navigate = useNavigate()
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
+    const [error, setError] = useState('');
 
     const handleSignIn = async (e) => {
         e.preventDefault();
         try {
-            await app.auth().signInWithEmailAndPassword(email, password);
+            const userCredential = await signInWithEmailAndPassword(all.auth, email, password);
+            const user = userCredential.user;
+            navigate(`/todos/${user.uid}`);
         } catch (error) {
-            console.error('Error signing in:', error.message);
+            setError('Invalid email or password. Please try again.');
+            console.error('Error signing in:', error);
         }
     };
 
