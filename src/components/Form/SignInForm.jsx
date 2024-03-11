@@ -17,14 +17,14 @@ const SignInForm = () => {
     };
 
     return (
-        <form onSubmit={handleSignIn} className="mt-4">
+        <form onSubmit={handleSignIn} className="bg-gray-100 text-black p-10">
             <h2 className="text-lg font-semibold mb-2">Sign In Here</h2>
             <input
                 type="email"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 placeholder="Email"
-                className="block w-full px-4 py-2 mb-2 border rounded-md focus:outline-none focus:ring focus:border-orange-300"
+                className="block w-full px-4 py-2 mb-4 border rounded-md focus:outline-none focus:ring focus:border-orange-300"
             />
             <input
                 type="password"
